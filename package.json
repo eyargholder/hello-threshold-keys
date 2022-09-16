@@ -1,0 +1,28 @@
+{
+  "name": "hedera-threshold-key",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eyargholder/hedera-threshold-key.git"
+  },
+  "keywords": [
+    "threshold",
+    "key",
+    "keys"
+  ],
+  "author": "Graye Holder",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eyargholder/hedera-threshold-key/issues"
+  },
+  "homepage": "https://github.com/eyargholder/hedera-threshold-key#readme",
+  "dependencies": {
+    "@hashgraph/sdk": "^2.18.1",
+    "dotenv": "^16.0.2"
+  }
+}
