@@ -17,7 +17,7 @@ for (let i = 0; i < 6; i += 1) {
 }
 
 // Create our threshold key
-const thresholdKey =  new KeyList(publicKeyList,33); 
+const thresholdKey =  new KeyList(publicKeyList,2); 
 
 console.log("The 1/3 threshold key structure" +thresholdKey);
 
