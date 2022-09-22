@@ -1,7 +1,7 @@
-The purpose of hedera-threshold key is to create a hedera (testnet) account with threshold keys 2 of 6.
+The purpose of hello-threshold-keys is to create a hedera (testnet) account with threshold keys 2 of 6.
 
 Conditions:
-A hedera account with private key.
+A hedera testnet account with private key.
 
 Steps:
 1. Open codesandbox
