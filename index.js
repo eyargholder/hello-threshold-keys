@@ -44,7 +44,7 @@ console.log("The 1/3 threshold key structure" +thresholdKey);
     //Create a new account with 1,000 tinybar starting balance
     const newAccountTransactionResponse = await new AccountCreateTransaction()
         .setKey(thresholdKey)
-        .setInitialBalance(Hbar.fromTinybars(100000000000000))
+        .setInitialBalance(Hbar.fromTinybars(1000))
         .execute(client);
 
     // Get the new account ID
