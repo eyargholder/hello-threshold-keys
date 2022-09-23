@@ -8,7 +8,7 @@ Steps:
 2. Import repo into codesandbox
 3. Enter hedera account and private key into .env
 4. Refresh (restart) sandbox
-5. Copy and past keys and account info
+5. Copy and paste keys and account info
 6. End
 
 Ref: https://docs.hedera.com/guides/getting-started/try-examples/schedule-your-first-transaction Para 1.
