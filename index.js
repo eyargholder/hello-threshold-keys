@@ -25,7 +25,7 @@ console.log("The 1/3 threshold key structure" +thresholdKey);
     const myAccountId = process.env.MY_ACCOUNT_ID;
     const myPrivateKey = process.env.MY_PRIVATE_KEY;
     const senderAccount = process.env.senderAccount;
-    const recipientAccount = process.env.senderAccount;
+    const recipientAccount = process.env.recipientAccount;
     
 
     // If we weren't able to grab it, we should throw a new error
