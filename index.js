@@ -107,6 +107,24 @@ console.log("The 1/3 threshold key structure" +thresholdKey);
     //Get the scheduled transaction ID
     const scheduledTxId = receipt.scheduledTransactionId;
     console.log("The scheduled transaction ID is " +scheduledTxId);
+    
+    //Submit the first signature
+const signature1 = await (await new ScheduleSignTransaction()
+     .setScheduleId(scheduleId)
+     .freezeWith(client)
+     .sign(signerKey1))
+     .execute(client);
+     
+    //Verify the transaction was successful and submit a schedule info request
+    const receipt1 = await signature1.getReceipt(client);
+    console.log("The transaction status is " +receipt1.status.toString());
+
+    const query1 = await new ScheduleInfoQuery()
+     .setScheduleId(scheduleId)
+     .execute(client);
+
+    //Confirm the signature was added to the schedule   
+    console.log(query1);
      
 
 
