@@ -1,4 +1,4 @@
-const { Client, PrivateKey, AccountCreateTransaction, AccountBalanceQuery, Hbar, TransferTransaction, KeyList} = require("@hashgraph/sdk");
+const { Client, PrivateKey, AccountCreateTransaction, AccountBalanceQuery, Hbar, TransferTransaction, KeyList, ScheduleCreateTransaction} = require("@hashgraph/sdk");
 require("dotenv").config();
 
 async function main() {
