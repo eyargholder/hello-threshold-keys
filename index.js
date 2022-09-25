@@ -91,7 +91,7 @@ console.log("The 1/3 threshold key structure" +thresholdKey);
      const transaction = new TransferTransaction()
      .addHbarTransfer(senderAccount, Hbar.fromTinybars(-1))
      .addHbarTransfer(recipientAccount, Hbar.fromTinybars(1));
-    
+    //--------------------------------------------------------
     //Create a schedule transaction
     const transaction = new ScheduleCreateTransaction()
      .setScheduledTransaction(transactionToSchedule);
@@ -105,6 +105,8 @@ console.log("The 1/3 threshold key structure" +thresholdKey);
     //Get the schedule ID
     const scheduleId = receipt.scheduleId;
     console.log("The schedule ID of the schedule transaction is " +scheduleId);
+    
+    //---------------------------------------------------------------
     
     //Schedule a transaction
     const scheduleTransaction = await new ScheduleCreateTransaction()
