@@ -24,6 +24,8 @@ console.log("The 1/3 threshold key structure" +thresholdKey);
     //Grab your Hedera testnet account ID and private key from your .env file
     const myAccountId = process.env.MY_ACCOUNT_ID;
     const myPrivateKey = process.env.MY_PRIVATE_KEY;
+    const senderAccount = process.env.senderAccount;
+    const recipientAccount = process.env.senderAccount;
 
     // If we weren't able to grab it, we should throw a new error
     if (myAccountId == null ||
