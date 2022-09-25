@@ -83,6 +83,12 @@ console.log("The 1/3 threshold key structure" +thresholdKey);
         .execute(client);
 
     console.log("The account balance after the transfer is: " +getNewBalance.hbars.toTinybars() +" tinybar.")
+    
+    //Create a transaction to schedule
+    transaction := hedera.NewTransferTransaction().
+    AddHbarTransfer(senderAccount, hedera.HbarFromTinybar(-1)).
+    AddHbarTransfer(recipientAccount, hedera.HbarFromTinybar(1))
+     
 
 
 
